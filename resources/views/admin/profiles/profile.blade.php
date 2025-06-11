@@ -23,7 +23,11 @@
 
                     <div class="col-sm-12">
                         <center>
+                            @if(!empty($user->profile->avatar))
                             <img src="{{ asset('storage/' . $user->profile->avatar) }}" class="img-circle img-thumbnail" style="width:100px;"><hr>
+                            @else
+                            <img src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png" class="img-circle img-thumbnail" style="width:100px;"><hr>
+                            @endif
                         </center>
                     </div>
 
@@ -68,7 +72,7 @@
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Bio<span class="text-danger">*</span></label>
                                             <input type="text" name="bio" placeholder="Name" class="form-control"
-                                                value="{{ $user->profile->bio }}">
+                                                value="{{ (!empty($user->profile->bio))?$user->profile->bio:'' }}">
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Avatar<span class="text-danger">*</span></label>
@@ -81,12 +85,12 @@
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Mobile No.<span class="text-danger">*</span></label>
                                             <input type="text" name="mobile" placeholder="Mobile" class="form-control"
-                                                value="{{ $user->profile->mobile }}">
+                                                value="{{ (!empty($user->profile->mobile))?$user->profile->mobile:'' }}">
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Address<span class="text-danger">*</span></label>
                                             <input type="text" name="address" placeholder="Address" class="form-control"
-                                                value="{{ $user->profile->address }}">
+                                                value="{{ (!empty($user->profile->address))?$user->profile->address:'' }}">
                                         </div>
                                     </div>
                                 </div>
