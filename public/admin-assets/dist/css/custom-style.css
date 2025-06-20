@@ -7,17 +7,18 @@ body{
 .main-sidebar{
 	background-color:#fff;
 }
-.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link{
-	background-color:#423F3F;
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link, .nav-treeview>.nav-item>.nav-link:hover {
+	background-color:#423F3F !important;
 	border-radius:0;
-	color:#fff;
+	color:#fff !important;
 }
 [class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
 	background-color:#423F3F;
 	color:#fff;
 	border-radius:0;
 }
-.nav-sidebar .nav-item>.nav-link{
+.nav-sidebar .nav-item>.nav-link,
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link{
 	color:#000;
 }
 [class*=sidebar-dark] .brand-link{
@@ -27,12 +28,25 @@ body{
 .brand-link .brand-image{
 	max-height:initial;
 	margin-top:5px;
+    max-width: 210px;
 }
 .navbar-light .navbar-nav .nav-link{
 	color:#000;
 	font-size:17px;
 }
-
+.breadcrumb-wrap {
+    display: flex;
+    justify-content: start;
+}
+.breadcrumb-wrap .breadcrumb{
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.page-item.active .page-link {
+    background-color: #000;
+    border-color: #000;
+}
  
 .content-header h1{
 	text-transform: uppercase;
@@ -137,6 +151,10 @@ body{
     height: calc(2.25rem + 4px);
     background-color: azure;
     border: none;
+}
+.card-header .custom-btn{
+    margin-top: 0;
+    float: right;
 }
 
 .custom-btn , .custom-btn:focus

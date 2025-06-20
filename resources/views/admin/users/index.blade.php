@@ -10,6 +10,13 @@
     <section class="content">
         <div class="container-fluid">
             <br>
+            <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Inline Charts</li>
+            </ol>
+            </div>
+            <br>
             <div class="card">
 
                 @if ($message = Session::get('success'))
@@ -21,7 +28,7 @@
 
                 <div class="card-header">
                     <h3 class="card-title">Users</h3>
-                    <a href="{{ route('users.create') }}" class="btn btn-primary pull-right">Add New User</a>
+                    <a href="{{ route('users.create') }}" class="btn btn-primary custom-btn pull-right">Add New User</a>
                 </div>
                 <div class="card-body">
                     <table id="example1" class="table table-bordered table-striped">
