@@ -25,8 +25,6 @@
                         <center>
                             @if(!empty($user->profile->avatar))
                             <img src="{{ asset('storage/' . $user->profile->avatar) }}" class="img-circle img-thumbnail" style="width:100px;"><hr>
-                            @else
-                            <img src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png" class="img-circle img-thumbnail" style="width:100px;"><hr>
                             @endif
                         </center>
                     </div>
@@ -72,7 +70,11 @@
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Bio<span class="text-danger">*</span></label>
                                             <input type="text" name="bio" placeholder="Name" class="form-control"
+<<<<<<< HEAD
                                                 value="{{ (!empty($user->profile->bio))?$user->profile->bio:'' }}">
+=======
+                                                value="{{ (!empty($user->profile->bio)) ? $user->profile->bio : '' }}">
+>>>>>>> 64848ac5444adc39727971d875736cbc10cf0bf6
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Avatar<span class="text-danger">*</span></label>
