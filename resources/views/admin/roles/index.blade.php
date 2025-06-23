@@ -13,6 +13,13 @@
     <section class="content">
         <div class="container-fluid">
             <br>
+            <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Inline Charts</li>
+            </ol>
+            </div>
+            <br>
             <!-- Small boxes (Stat box) -->
             <div class="card">
 
@@ -25,7 +32,7 @@
 
                 <div class="card-header">
                     <h3 class="card-title">Roles</h3>
-                    <a href="{{ route('roles.create') }}" class="btn btn-primary pull-right">Add New Role</a>
+                    <a href="{{ route('roles.create') }}" class="btn btn-primary custom-btn">Add New Role</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">

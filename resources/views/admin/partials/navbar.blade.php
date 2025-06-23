@@ -9,7 +9,7 @@
     <ul class="navbar-nav ml-auto">
         <li class="dropdown nav-item user-dropdown">
             <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button"
-                aria-expanded="false"><span class="user-name">Violeta Parra</span>
+                aria-expanded="false"><img height="34" width="34" src="{{ asset('admin-assets/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2 mr-2" alt="User Image"><span class="user-name">Violeta Parra</span>
                 <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu" role="menu">

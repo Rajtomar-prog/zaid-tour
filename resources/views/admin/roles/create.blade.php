@@ -12,12 +12,19 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            
+            <br>
+            <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Inline Charts</li>
+            </ol>
+            </div>
+            <br>
             <!-- Small boxes (Stat box) -->
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">Create New Role</h3>
-                    <a href="{{ route('roles.index') }}" class="btn btn-primary pull-right">Back</a>
+                    <a href="{{ route('roles.index') }}" class="btn btn-primary custom-btn">Back</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">

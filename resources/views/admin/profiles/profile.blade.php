@@ -12,7 +12,14 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-
+            <br>
+            <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Inline Charts</li>
+            </ol>
+            </div>
+            <br>
             <!-- Small boxes (Stat box) -->
             <div class="card">
                 <div class="card-header">
@@ -70,11 +77,7 @@
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Bio<span class="text-danger">*</span></label>
                                             <input type="text" name="bio" placeholder="Name" class="form-control"
-<<<<<<< HEAD
-                                                value="{{ (!empty($user->profile->bio))?$user->profile->bio:'' }}">
-=======
                                                 value="{{ (!empty($user->profile->bio)) ? $user->profile->bio : '' }}">
->>>>>>> 64848ac5444adc39727971d875736cbc10cf0bf6
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="lbl-text">Avatar<span class="text-danger">*</span></label>

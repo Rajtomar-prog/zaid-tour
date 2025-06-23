@@ -28,7 +28,7 @@
 
                 <div class="card-header">
                     <h3 class="card-title">Users</h3>
-                    <a href="{{ route('users.create') }}" class="btn btn-primary custom-btn pull-right">Add New User</a>
+                    <a href="{{ route('users.create') }}" class="btn btn-primary custom-btn">Add New User</a>
                 </div>
                 <div class="card-body">
                     <table id="example1" class="table table-bordered table-striped">
